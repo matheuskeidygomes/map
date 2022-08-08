@@ -29,7 +29,7 @@ OBS: Todos os dados foram fornecidos por uma API externa
 
 Acesse clicando no botão abaixo:   
   
-<a href="https://sony-playstation.herokuapp.com/"> 
+<a href="https://matheuskeidygomes.github.io/map/"> 
    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/> 
 </a>
 
