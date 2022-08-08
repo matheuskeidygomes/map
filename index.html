@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TerraQ - Teste Leaflet</title>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+		integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+		crossorigin="" />
+	<script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+		integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+		crossorigin=""></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="./css/styles.css">
+</head>
+
+<body>
+
+	<div id='map'>
+		<div id='change-map'>
+			<button id="select-map">
+				<span class="gps-span"> Change Map </span>
+				<img class="gps-image" src="./assets/gps.png" alt="" />
+			</button>
+		</div>
+		<div id='user-menu'>
+			<img class="menu-image" src="./assets/menu.png" alt="" />
+		</div>
+		<aside id="aside-menu">
+			<img class="close-menu" src="./assets/back.png" alt="" />
+			<img src="" alt="" class="user-avatar" />
+			<div class="user-details">
+				<span class='user-name'></span>
+				<span class='user-email'></span>
+				<span class='user-phone'></span>
+				<span class='user-birth'> </span>
+				<span class='user-sex'></span>
+			</div>
+		</aside>
+		<div id="modal">
+			<div class="modal-content">
+				<img src="./assets/close.png" class="close-modal" alt="close" />
+				<span class="data-point-span"></span>
+				<div class="data-input-container">
+					<span class="data-input-span">Por favor, insira uma data: </span>
+					<input type="date" class="data-input" />
+				</div>
+				<div class="point-data-content"></div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="./js/script.js"></script>
+	<script type="text/javascript" src="./js/toggle.js"></script>
+	<script type="text/javascript" src="./js/modal.js"></script>
+</body>
+
+</html>

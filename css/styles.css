@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.leaflet-container {
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#user-menu {
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 401;
+}
+
+#change-map {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 401;
+}
+
+#select-map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #64b6eb;
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: none;
+    gap: 15px;
+    cursor: pointer;
+    transition: all 0.1s linear;
+}
+
+#select-map:hover {
+    transform: scale(103%);
+    background-color: #4183af;
+}
+
+.gps-span {
+    color: white;
+    font-weight: bold;
+}
+
+.gps-image {
+    width: 35px;
+}
+
+.menu-image {
+    width: 45px;
+    cursor: pointer;
+    transition: all 0.1s linear;
+}
+
+.close-menu {
+    width: 40px;
+    margin:10px 10px 0px 0px;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: all 0.1s linear;
+}
+
+.menu-image:hover,
+.close-menu:hover {
+    transform: scale(105%);
+}
+
+#aside-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    padding: 20px;
+    top: 0;
+    right: 0;
+    z-index: 1001;
+    background-color: #91999fe6;
+    height: 100%;
+    width: 280px;
+    animation-name: slide;
+    animation-duration: 0.2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    cursor: arrow;
+}
+
+.user-avatar {
+    margin: 20px 0px 30px 0px;
+    border-radius: 50%;
+    width: 80%;
+}
+
+.user-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: rgb(232, 228, 228);
+    width: 80%;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.user-details span {
+    margin: 5px 0px;
+    cursor: text;
+}
+
+.point-details {
+    display: flex;
+    flex-direction: column;
+}
+
+#modal {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom:0;
+    right: 0;
+    background-color:rgba(0, 0, 0, 0.794)
+}
+
+.modal-content {
+    color:white;
+    width: 35%;
+    border-radius: 8px;
+    position: relative;
+    background-color: #adadadbf;
+    animation-name: maximize;
+    animation-duration: 0.2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.data-input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:35px;
+    font-size: 17px;
+    gap:10px;
+}
+
+.data-input {
+    border: 1px solid lightgrey;
+    padding: 5px;
+    border-radius: 6px;
+    outline:none;
+}
+
+.clima-image {
+    width: 125px;
+    margin-bottom:15px;
+}
+
+.empty-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.point-data-content {
+    display: flex;
+    flex-direction: column;
+    margin:5%;
+    padding: 20px;
+}
+
+.point-btn {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background: #7cb7ff;
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.point-span {
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.point-icons {
+    width:20px;
+    margin-right: 10px;
+}
+
+.close-modal {
+    position:absolute;
+    top:0;
+    right: 0;
+    width: 25px;
+    margin:10px;
+    cursor: pointer;
+}
+
+.data-point-span {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes maximize {
+    0% {
+        transform: scale(0%);
+    }
+
+    100% {
+        transform: scale(100%);
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .point-span {
+        font-size:20px;
+    }
+
+    .clima-image {
+        width: 75px;
+    }
+
+    .data-input-container {
+        flex-direction: column;
+    }
+
+    .data-input {
+        width: 55%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .modal-content {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 870px) {
+    .modal-content {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .modal-content {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 670px) {
+    .modal-content {
+        width: 55%;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .modal-content {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    .modal-content {
+        width: 75%;
+    }
+    .close-modal {
+        width: 20px;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .modal-content {
+        width: 80%;
+    }
+}
