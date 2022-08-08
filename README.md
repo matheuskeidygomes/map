@@ -35,10 +35,9 @@ Acesse clicando no botão abaixo:
 
 # Screenshots
 
-![Captura de tela de 2022-03-09 11-45-01](https://user-images.githubusercontent.com/74063350/157465433-71b3088b-e94d-402d-9bec-35637c189d4b.png)
-
-![Captura de tela de 2022-03-09 11-45-12](https://user-images.githubusercontent.com/74063350/157465547-cf2e0912-89ba-4490-b416-e9607664afd6.png)
-
+![map2](https://user-images.githubusercontent.com/74063350/183503749-3027b54a-fec3-4306-92e8-ffdce419937c.PNG)
+![map](https://user-images.githubusercontent.com/74063350/183503759-578594d1-f275-4409-a119-29c8b0909fc9.PNG)
+![map3](https://user-images.githubusercontent.com/74063350/183503769-8b37fbe9-b1fe-4b69-86e3-0e8277ab0ccb.PNG)
 
 # Rodando a aplicação
 
